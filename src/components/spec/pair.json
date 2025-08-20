@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_spec_pairs",
+  "info": {
+    "displayName": "Pair",
+    "icon": "key",
+    "description": "Key/value specification"
+  },
+  "attributes": {
+    "key": { "type": "string", "required": true },
+    "value": { "type": "string", "required": true }
+  }
+}
