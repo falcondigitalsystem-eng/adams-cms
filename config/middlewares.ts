@@ -1,10 +1,13 @@
-// middleware.ts — disabled (pass-through)
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-
-export function middleware(_req: NextRequest) {
-  return NextResponse.next();
-}
-
-// Empty matcher = middleware won't run on any route
-export const config = { matcher: [] };
+// config/middlewares.ts — Strapi defaults
+export default [
+  'strapi::errors',
+  'strapi::security',
+  'strapi::cors',
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
+];
