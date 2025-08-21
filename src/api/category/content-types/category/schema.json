@@ -8,27 +8,14 @@
     "description": "Product categories"
   },
   "options": { "draftAndPublish": true },
-  "attributes": {
-    "name": { "type": "string", "required": true },
-    "slug": { "type": "uid", "targetField": "name", "required": true, "unique": true },
-    "description": { "type": "richtext" },
-    "banner": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "sortOrder": { "type": "integer" }
-  }
-}
-{
-  "kind": "collectionType",
-  "collectionName": "categories",
-  "info": { "singularName": "category", "pluralName": "categories", "displayName": "Category" },
-  "options": { "draftAndPublish": true },
   "pluginOptions": {
     "content-api": { "visible": true }
   },
   "attributes": {
     "name": { "type": "string", "required": true },
-    "slug": { "type": "uid", "targetField": "name" },
+    "slug": { "type": "uid", "targetField": "name", "required": true, "unique": true },
     "description": { "type": "richtext" },
-    "banner": { "type": "media", "multiple": false },
+    "banner": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
     "sortOrder": { "type": "integer" }
   }
 }
